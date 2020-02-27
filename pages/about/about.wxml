@@ -1,0 +1,32 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:500rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view style='background:white;margin-top:20rpx;margin-bottom:20rpx;'>
+  <view style='padding-left:50rpx;padding-top:50rpx;padding-right:50rpx;font-size:30rpx;'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>本企业奉行“科技、环保、人性、风尚”的设计理念，坚持以“创新兴企，人才为本”为企业宗旨，秉承“全程专业无忧”的服务理念，赢得世界的目光，是集研发、设计、生产、销售于一体的企业。企业拥有先进的精密生产设备，超强的设计能力和新产品研发能力的设计师团队、加工生产多年的专业技术人员，确保了持续竞争力。</view>
+  <view style='padding:50rpx;font-size:30rpx;'><text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>本企业的产品以全新的设计理念、国际化的设计风格、品质上乘的原材料，推陈出新将使用功能主义和简约时尚风格的完美结合，让企业产品在国内外市场深受消费者喜爱。</view>
+</view>
+<view class='h0'>
+  <view>电话：{{mobilephone}}</view>
+  <view>传真：{{chuanzhen}}</view>
+  <view>QQ：{{qq1}}<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{qq2}}</view>
+  <view>网址：{{wangzhi1}}<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{wangzhi2}}</view>
+  <view>投诉电话：{{tousudianhua1}}<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{tousudianhua2}}</view>
+  <view bindtap='click'>
+  <view><image src='../../icon/shouhuodizhi.png' style='width:40rpx;height:40rpx;float:left;'></image> </view>
+  地址：{{dizhi}}
+  </view>
+</view>
+
+  <view style='font-size:30rpx;text-align:center;background:white;padding:20rpx;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>由深圳信诚天下电子商务有限公司提供技术支持</text>
+</view>
+
+<view> 
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>

@@ -1,0 +1,38 @@
+<view class="navbar">
+<scroll-view scroll-x="true" scroll-left="{{scrollLeft}}"style='width: 100%; white-space:nowrap; '>
+  <text wx:for="{{category}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </scroll-view>
+</view>
+
+    <view hidden="{{currentTab!==0}}">
+      <view>
+        <view wx:for="{{chanpingzhanshi}}" wx:key="item">
+          <image src='{{item}}' style='width:100%' bindtap='previewImg' data-index='{{index}}'data-xi='{{item}}'></image>
+        </view>
+      </view>
+    </view>
+    
+    <view hidden="{{currentTab!==1}}">
+      <view>
+        <view wx:for="{{chanpingzhanshi}}" wx:key="item">
+          <image src='{{item}}' style='width:100%' bindtap='previewImg' data-index='{{index}}'data-xi='{{item}}'></image>
+        </view>
+      </view>
+    </view>
+
+    <view hidden="{{currentTab!==2}}">
+      <view>
+        <view wx:for="{{ldianyonglvcai}}" wx:key="item" >
+          <image src='{{item}}' style='width:100%' bindtap='previewImg1'data-xi='{{item}}'  data-index='{{index}}'></image>
+        </view>
+      </view>
+    </view>
+
+<view style='font-size:30rpx;text-align:center;background:white;padding:20rpx;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>由深圳信诚天下电子商务有限公司提供技术支持</text>
+</view>
+
+<view> 
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>

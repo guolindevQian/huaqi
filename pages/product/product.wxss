@@ -1,0 +1,116 @@
+page{
+  background: whitesmoke;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+ 
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 20rpx;
+}
+.navbar .item.active{
+  color: red;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: red;
+}
+.categroy-left{
+    float: left;
+    width: 150rpx;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 25rpx;
+}
+.categroy-left .cate-list{
+    height: 190rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-left: 3px solid #fff;
+}
+.categroy-left .cate-list.on{
+    color: red;
+    border-color: red;
+}
+.categroy-right{
+    float: right;
+    width: 600rpx;
+    height: 100%;
+    overflow: hidden;
+    
+}
+.cate-box{
+    height: 100%;
+    padding:40rpx;
+    box-sizing: border-box;
+}
+.cate-box .cate-banner image{
+    display: block;
+    width: 100%;
+    height: 190rpx;
+}
+.cate-title{
+    position: relative;
+    height: 30rpx;
+    line-height: 30rpx;
+    padding:30rpx 0 55rpx;
+    text-align: center;
+    color: red;
+    font-size: 28rpx;
+}
+.cate-title::before{
+    position: absolute;
+    left: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: red;
+}
+.cate-title::after{
+    position: absolute;
+    right: 130rpx;
+    top: 43rpx;
+    content: '';
+    width: 70rpx;
+    height: 4rpx;
+    background: red;
+}
+
+.product-list{
+    display: inline-block;
+    width: 160rpx;
+    height: 160rpx;
+    text-align: center;
+    margin:0 20rpx 20rpx 0;
+    font-size: 24rpx;
+}
+.product-list image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+}
+.product-list:nth-child(3n){
+    margin-right: 0;
+}
+.img-plus-style1 {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 230rpx;  
+  right: 30rpx;   
+  opacity: 0.7
+}  

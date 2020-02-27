@@ -1,0 +1,72 @@
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:500rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view style='width:100%;background:white;height:200rpx;margin-top:20rpx;'>
+  <view wx:for="{{imag}}" wx:key="item" class='pinzhi'>
+    <view style='margin-bottom:30rpx;'>
+      <image src='{{item.url}}' style='width:40%;height:80rpx;padding-left:30rpx;'></image>
+    </view>
+    <view style='margin-left:20rpx;font-size:30rpx;'>
+      {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view style='margin-top:20rpx;margin-bottom:20rpx;padding:20rpx;background:white;height:200rpx;font-size:35rpx;'>
+  <view>
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{chanpinbiao}}
+  </view>
+</view>
+
+
+<view  style='background:white'>
+  <view style='text-align:center;margin-top:20rpx;width:100%;margin-bottom:20rpx;font-size:40rpx;padding:20rpx;border-bottom:3rpx solid whitesmoke'>-推荐产品-</view>
+  <view style='height:1200rpx;margin-bottom:20rpx;' >
+    <view wx:for="{{chanpin}}" wx:key="item" style='width:100%;height:600rpx;font-size:30rpx;margin:10rpx;'>
+      <view>
+        <image src='{{item}}' style='width:100%;background-size:cover;height:500rpx;' bindtap='previewImg'data-index='{{index}}' ></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='dengstyle'>
+  <view class='dengstylekuan' >
+    <view style='color:red;margin-left:30rpx;margin-bottom:10rpx;'>型号：HQ-431、HQ-432、HQ-413</view>
+    <view style='opacity:0.5;font-size:25rpx;margin-left:30rpx;margin-right:30rpx'>颜色：琥珀拉丝、拉丝银</view>
+    <view style='opacity:0.5;font-size:25rpx;margin-left:30rpx;margin-right:30rpx'>插条颜色：金、黑、银</view>
+  </view>
+  <view >
+    <image src='http://m.qpic.cn/psb?/V14JKMah4fJQdS/idHdwBj6AZVPfNF6MGBdoCSV9w*jnpKZC1FjKZ7e81s!/b/dL4AAAAAAAAA&bo=3QFjAQAAAAARF54!&rf=viewer_4' class='dengstyletu'></image>
+  </view>
+  <view  >
+    <image src='https://m.qpic.cn/psb?/V14JKMah4fJQdS/F5ToiBhX4wVuWNmn6AAJ0wU.tpDzNYUrHVtjq5hBTIY!/b/dMEAAAAAAAAA&bo=3QFaAQAAAAARB7c!&rf=viewer_4' class='dengstyletu'></image>
+  </view>
+  <view class='dengstylekuan' >
+    <view style='color:red;margin-left:30rpx;margin-bottom:20rpx;'>型号：HQ-901、HQ-902（上中下通用）、HQ-634(格条)</view>
+    <view style='opacity:0.5;font-size:25rpx;margin-left:30rpx;margin-right:30rpx'>颜色：柚木C、索菲红、天使白、5270、5204、皮革2、欧式白橡</view>
+  </view>
+  <view class='dengstylekuan'>
+    <view style='color:red;margin-left:30rpx;margin-bottom:20rpx;'>型号：HQ-911、HQ-912(上中下横)</view>
+    <view style='opacity:0.5;font-size:25rpx;margin-left:30rpx;margin-right:30rpx'>颜色：天使白、5270、雪山檀、黄金檀 
+</view>
+  </view>
+  <view >
+    <image src='http://m.qpic.cn/psb?/V14JKMah4fJQdS/*ucRA9t0XyYjgbg9exJxOJKDzdFUGvvBvxDFa1FMFTw!/b/dL8AAAAAAAAA&bo=.gJWAwAAAAARF40!&rf=viewer_4' class='dengstyletu' style='height:410rpx;'></image>
+  </view>
+</view>
+
+<view style='font-size:30rpx;text-align:center;background:white;padding:20rpx;'bindtap="totianxiphone">
+  <image src='../../icon/contact-select.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>由深圳信诚天下电子商务有限公司提供技术支持</text>
+</view>
+
+<view> 
+<image src="../../icon/dianhua.png" class="img-plus-style1" bindtap="tophone"></image>
+</view>

@@ -1,0 +1,47 @@
+page{
+  background: whitesmoke;
+}
+
+.slide-image{
+  width: 100%;
+  height: 100%
+}
+.dengstyle{
+  background-image: url("http://515029.s81i.faiusr.com/4/101/AFEI1bcfEAQYACDqi43hBSi_2NS5BzDuBTi7B0Bl.png");
+  width: 100%;
+  height: 910rpx;
+  background-size: 100% 100%;
+  margin-bottom: 20rpx;
+}
+.dengstylekuan{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 30rpx;
+  float: left;
+  width: 50%;
+  height: 250rpx;
+  
+}
+.dengstyletu{
+  float: left;
+  width: 50%;
+  height: 250rpx;
+  
+}
+.pinzhi{
+  width: 25%;
+  height: 50rpx;
+  float: left;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  text-align: center;
+}
+.img-plus-style1 {  
+  height: 70rpx;  
+  width: 70rpx;  
+  position: fixed;  
+  bottom: 230rpx;  
+  right: 30rpx;   
+  opacity: 0.7
+}  
